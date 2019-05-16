@@ -28,6 +28,7 @@
 *   Code originally by reworks
 */
 
+#include "language.h"
 #include "draw.h"
 #include "config.h"
 #include "screen.h"
@@ -54,7 +55,7 @@ void newPin(bool allowSkipping, u32 pinMode)
 
     u8 length = 4 + 2 * (pinMode - 1);
 
-    drawString(true, 10, 10, COLOR_TITLE, "Enter a new PIN using ABXY and the DPad");
+    drawString(true, 10, 10, COLOR_TITLE, textGetString(StrId_NewPin));
     drawString(true, 10, 10 + SPACING_Y, COLOR_TITLE, allowSkipping ? "Press START to skip, SELECT to reset" : "Press SELECT to reset");
 
     drawFormattedString(true, 10, 10 + 3 * SPACING_Y, COLOR_WHITE, "PIN (%u digits): ", length);
