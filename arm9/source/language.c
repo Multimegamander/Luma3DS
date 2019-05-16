@@ -19,7 +19,7 @@ const char* const g_strings[StrId_Max][16] =
 {
 	[StrId_NewPin] =
 	{	
-    STR_EN("Enter a new PIN using ABXY and the DPad"),
+                STR_EN("Enter a new PIN using ABXY and the DPad"),
 		STR_ES("Spanish"),
 		STR_DE("German"),
 		STR_FR("French"),
